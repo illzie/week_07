@@ -116,7 +116,7 @@ console.log(average([12, 1, 2, 70, 11, 5, 36]));
 /*
     11) Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 */
-function greaterThan(a, b) {
+function greaterThanA(a, b) {
     let avgA = () => {
         let sum = 0;
         for (let i = 0; i < a.length; i++) {
