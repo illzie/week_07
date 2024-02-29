@@ -65,31 +65,34 @@ main>* {
 
 h1 {
     text-align: center;
-    margin-block: 0.5rem;
+    margin-block: 1rem;
 }
 
-.student {
-    display: flex;
-    justify-content: space-between;
-}
-
-.class-weeks {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.week-link {
-    background-color: white;
-    padding: 0.5rem;
-    border: 1px solid var(--clr-disabled);
-}
-
-.week-link a {
+a {
     color: var(--clr-accent);
 }
 
-.week-link a:not([href]) {
+small code,
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+small code {
+
     color: var(--clr-disabled);
+}
+
+.student,
+.course {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.student {
+    justify-content: space-between;
+}
+
+nav {
+    margin-block: 1rem;
 }
